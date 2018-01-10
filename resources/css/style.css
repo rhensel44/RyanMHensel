@@ -2,8 +2,12 @@ html {
 
 }
 
+/*generals*/
+
+
 body {
 background-color: #CEEFE8;
+z-index: 1;
 }
 
 .container-fluid {
@@ -148,4 +152,32 @@ background-color: #CEEFE8;
 
 .personal button {
   margin-bottom: 20px;
+}
+
+/*web development page*/
+
+
+.web-nav a {
+  font-family: 'Ranga', cursive;
+  font-size: 36px;
+}
+
+.web-dev {
+  margin-top: 70px;
+  color: #FFFEF7;
+  background-image: url(../images/webbackground.jpg);
+  z-index: 5;
+  background-size: cover;
+}
+
+.web-des ul {
+  margin-left: 50px;
+}
+
+.web-des button {
+  margin-bottom: 20px;
+}
+
+.web-des h4 {
+  margin: 15px auto;
 }
