@@ -181,3 +181,64 @@ z-index: 1;
 .web-des h4 {
   margin: 15px auto;
 }
+
+.web-des {
+  margin-bottom: 50px;
+}
+
+/*gis page*/
+
+.gis-nav a {
+  font-family: 'Ranga', cursive;
+  font-size: 36px;
+}
+
+.gis {
+  margin-top: 70px;
+  color: black;
+  background-color: #EBEBEB;
+}
+
+.gis-des button {
+  margin-bottom: 15px;
+}
+
+.gis-des h4 {
+  margin: 15px auto;
+}
+
+/*forestry page*/
+
+.forestry-nav a {
+  font-family: 'Ranga', cursive;
+  font-size: 36px;
+}
+
+.forestry {
+  margin-top: 70px;
+  color: black;
+  background-color: #EBEBEB;
+}
+
+.forestry-des button {
+  margin-bottom: 15px;
+}
+
+.forestry-des h4 {
+  margin: 15px auto;
+  padding-left: 15px;
+}
+
+.forestry-des ul {
+  margin-left: 50px;
+}
+
+.forestry-pics {
+  margin-bottom: 75px;
+}
+
+.forestry-pics img {
+  border: black;
+  border-style: solid;
+  border-width: 10px;
+}
