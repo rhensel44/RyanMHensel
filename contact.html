@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./resources/js/slick-1.8.0/slick/slick.css"/>
+    <link href="./resources/css/contact.css" type="text/css" rel="stylesheet">
+    <title>Contact</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <form id="contact" action="" method="post">
+        <h3>Contact</h3>
+        <h4>Use this form to send me an email.  Alternatively, you can call, text, or email me directly.</h4>
+        <h4>rhensel44@gmail.com</h4>
+        <h4>(928) 583-0524</h4>
+        <fieldset>
+          <input placeholder="Your name" type="text" tabindex="1" required autofocus name="name">
+        </fieldset>
+        <fieldset>
+          <input placeholder="Your Email Address" type="email" tabindex="2" name="email">
+        </fieldset>
+        <fieldset>
+          <input placeholder="Your Phone Number" type="tel" tabindex="3" name="number">
+        </fieldset>
+        <fieldset>
+          <textarea placeholder="Type your Message Here...." tabindex="5" required name="message"></textarea>
+        </fieldset>
+        <fieldset>
+          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        </fieldset>
+      </form>
+
+    </div>
+
+    <?php
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $number =$_POST['number'];
+    $message = $_POST['message'];
+    $formcontent="From: $name \n Message: $message";
+    $recipient = "rhensel44@gmail.com";
+    $subject = "Contact Form";
+    $mailheader = "From: $email \r\n";
+    mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+    echo "Thank You!";
+    ?>
+
+
+  </body>
+</html>
