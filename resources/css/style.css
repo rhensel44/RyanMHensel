@@ -242,3 +242,27 @@ z-index: 1;
   border-style: solid;
   border-width: 10px;
 }
+
+/*media query section*/
+.alt-about-me {
+  display: none;
+  margin: 230px 15px auto 15px;
+}
+
+@media (max-width: 970px) {
+  .jumbotron {
+    display: none;
+  }
+  .about-me {
+    display: none;
+  }
+  .about-right {
+    display: none;
+  }
+  .personal {
+    height: auto;
+  }
+  .alt-about-me {
+    display: block;
+  }
+}
